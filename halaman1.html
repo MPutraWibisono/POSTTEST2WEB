@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebabned - Official Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="heading">
+            <div class="logo"><a href =''>KEBABNED<a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><div class="ubah">
+                        <input type="checkbox" id="toggle" name="toggle">
+                        <label for="toggle"></label>
+                    </div></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!-- untuk home -->
+        <section id="home">
+            <img src="kebabned.png">
+            <div class="kolom">
+                <h2>Tentang</h2>
+                <p>Kebabned merupakan bisnis kebab berbasis online dan offline yang bermarkas pusat di Samarinda. Didirikan oleh Muhammad Putra Wibisono selaku owner usaha Kebabned. Beliau memulai bisnis diusia 14 tahun saat duduk di bangku SMP.<br>
+                    
+                Kalian juga bisa pantengin berita terbaru dengan cara kunjungi instagram kami. Terima kasih banyak</p><br>
+                <!-- <h2>instagram</h2>
+                <p>Website ini untuk. </p> -->
+            </div>
+        </section>
+        <!-- untuk menu -->
+        <section id="menu">
+            <div class="tengah">
+                <div class="kolom">
+                    <h2>Menu</h2>
+                </div>
+
+            <div class="menu-list">
+                <div class="menunya">
+                    <table>
+                        <tr>
+                            <th colspan="3"> Kebab </th>
+                        </tr>
+                        <tr>
+                            <td> Original  </td>
+                            <td> Kecil </td>
+                            <td> Rp.12,000 </td>
+                        </tr>
+                        <tr>
+                            <td> Original </td>
+                            <td> Besar </td>
+                            <td> Rp.15,000 </td>
+                        </tr>
+                        <tr>
+                            <td> Komplit (+Topping) </td>
+                            <td> Besar </td>
+                            <td> Rp.20,000 </td>
+                        </tr>
+                        <tr>
+                            <td> Kornet </td>
+                            <td> Kecil </td>
+                            <td> Rp.8,000 </td>
+                        </tr>
+                        <tr>
+                            <td> Tempe </td>
+                            <td> Kecil </td>
+                            <td> Rp.8,000 </td>
+                        </tr>
+                    </table>
+                </div><br>
+                
+                <div class="menunya">
+                    <table>
+                        <tr>
+                            <th colspan="3"> Topping </th>
+                        </tr>
+                        <tr>
+                            <td> Telur </td>
+                            <td> Rp.3,000 </td>
+                        </tr>
+                        <tr>
+                            <td> Keju </td>
+                            <td> Rp.3,000 </td>
+                        </tr>
+                        <tr>
+                            <td> Telur + Keju </td>
+                            <td> Rp.5,000 </td>
+                        </tr>
+                        <tr>
+                            <td> Mozarella </td>
+                            <td> Rp.5,000 </td>
+                        </tr>
+                    </table>
+                </div><br>                
+            </div>
+            </div>
+        </section>
+        <!-- untuk contact -->
+        <section id="contact">
+            <div class="tengah">
+                <div class="kolom">
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="contact-list">
+                    <div class="kartu-contact">
+                        <img src="https://cdn.pixabay.com/photo/2021/06/15/12/17/instagram-6338401_640.png">
+                        <a href="https://www.instagram.com/kebabned/">@kebabned</a>
+                    </div>
+                    <div class="kartu-contact">
+                        <img src="https://www.tanjunglesung.com/wp-content/uploads/2018/12/logo-wa-whatsapp.png">
+                        <a href="https://wa.me/6281346869292">Kebabned</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- untuk support -->
+        <section id="support">
+            <div class="tengah">
+                <div class="kolom">
+                    <h2>Support</h2>
+                </div>
+                <div class="support-list">
+                    <div class="support">
+                        <form>
+                            Apakah Puas terhadap produk kami?<br>
+                            <input type="radio" name="produk" value="Puas">Puas
+                            <input type="radio" name="produk" value="Tidak Puas">Tidak Puas
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2022. <b>Kebabned</b> All Rights Reserved.
+        </div>
+    </div>
+
+    <script defer>const toggle = document.getElementById("toggle");
+        console.log(toggle)
+        toggle.addEventListener("change", (e) => {
+            document.body.classList.toggle("dark", e.target.checked)
+        })
+    </script>
+</body>
+</html>
